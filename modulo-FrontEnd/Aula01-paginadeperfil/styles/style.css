@@ -1,0 +1,100 @@
+:root{
+    --bg: #ffffff;
+    --surface:#020202;
+    --card:#000000;
+    --primary: #a200ffd6;
+    --text: #000000;
+    --mutede: #000000;
+    --border: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'inter',sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+
+    background-color: rgba(red, green, blue, alpha);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    z-index: 999;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary)
+}
+
+nav{
+    display: flex;
+    gap: 30px;
+}
+
+nav a{
+    color: var(--text)
+    text-decoraition: none;
+    transition: 3s;
+}
+
+nav a:houver{
+    color: var(--primary);
+}
+
+hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container{
+    display: grid;
+    grid-template-columns: 350px lfr;
+
+    gap: 80px;
+    align-items: center;
+}
+
+.hero-image{
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: spx solid var(--primary);
+    box-shadow: 0 0 40px rgb(red, green, blue);
+}
